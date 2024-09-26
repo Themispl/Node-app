@@ -5,7 +5,7 @@ const port = 3000;
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://themis:Tp6978861413%40@cluster1.qdnkq.mongodb.net/codingfactory?retryWrites=true&w=majority")
+mongoose.connect(
 //mongoose.connect(process.env.MONGODB_URI)
   .then(
     () => console.log('Connected to MongoDB')

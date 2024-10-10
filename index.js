@@ -6,7 +6,7 @@ const port = 3000;
 const mongoose = require('mongoose');
 
 mongoose.connect(
-//mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect(process.env.MONGODB_URI)
   .then(
     () => console.log('Connected to MongoDB')
     , err => console.log('faild to connect :' + err)
